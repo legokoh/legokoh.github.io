@@ -1,0 +1,894 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "checkbox"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	//height: 100%
+
+h1,h2,h3,h4,label
+		font-weight: bold
+		font-family: $Montserrat
+		color: $main-color
+a
+	font-family: $Montserrat
+	color: $accent
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857143
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background: $white-color
+	background-position: -312px 25px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.btn
+	font-size: 16px
+	font-family: $Montserrat
+	font-weight: bold
+	height: 38px
+	padding: 8px 15px
+	border: none
+	border-radius: 0
+	text-transform: uppercase 
+
+.btn-primary
+	color: $white-color
+	background: $accent
+
+	&:hover
+		background: $blue-color
+		transition: color .2s, background .2s, border .2s, opacity .2s
+
+.btn-options
+	margin: 17px 5px 0
+	color: $white-color
+	background: $blue-color url("../img/options.png") 10px 9px no-repeat
+	padding: 0 10px 0 36px
+
+	&:hover
+		color: $white-color
+		background: $green-color url("../img/options.png") 10px 9px no-repeat
+		transition: color .2s, background .2s, border .2s, opacity .2s
+
+.btn-upload
+	margin: 17px 5px 0
+	color: $white-color
+	background: $accent url("../img/upload.png") 10px 9px no-repeat
+	padding: 0 10px 0 40px
+
+	&:hover
+		color: $white-color
+		background: $green-color url("../img/upload.png") 10px 9px no-repeat
+		transition: color .2s, background .2s, border .2s, opacity .2s
+
+.btn-invite
+	margin: 17px 5px 0
+	color: $white-color
+	background: $accent url("../img/plus.png") 10px 12px no-repeat
+	padding: 9px 10px 0 30px
+
+	&:hover
+		color: $white-color
+		background: $green-color url("../img/plus.png") 10px 12px no-repeat
+		transition: color .2s, background .2s, border .2s, opacity .2s
+
+.btn-send
+	margin: 17px 5px 0
+	color: $white-color
+	background: $blue-color url("../img/arrow-right.png") 10px 11px no-repeat
+	padding: 9px 10px 0 30px
+
+	&:hover
+		color: $white-color
+		background: $green-color url("../img/arrow-right.png") 10px 11px no-repeat
+		transition: color .2s, background .2s, border .2s, opacity .2s
+
+.header
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, .1)
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100px
+		float: left
+	
+		&_right
+			float: right
+	
+	
+	&__title
+		display: inline-block
+		margin: 0px
+		font-family: $Montserrat
+		font-weight: 800
+		line-height: 1.1
+		font-size: 16px
+		color: $main-color
+		text-transform: uppercase
+		margin-left: 10px
+	
+	&__link
+		margin-left: 15px
+
+#map
+	height: 235px
+	margin-top: 25px
+
+
+.wrapper
+	background: #F7F7F7
+	padding-bottom: 30px
+
+.menu
+	background-color: $white-color
+	padding-top: 10px
+	margin-top: 25px
+	box-shadow: 1px 0px 10px rgba(0,0,0, .1)
+	&-nav
+		&__list
+			list-style-type: none
+			padding-bottom: 35px
+			padding-left: 0px
+		
+		&__link
+			font-family: $Montserrat
+			font-weight: 500
+			font-size: 14px
+			color: $main-color
+			padding-left: 75px
+			text-transform: uppercase
+			margin-bottom: 35px
+			display: block
+			position: relative
+			
+			&:hover
+				text-decoration: none
+				color: $main-color
+			
+			&:link
+				text-decoration: none
+				color: $main-color
+			
+			&:active
+				text-decoration: none
+				color: $main-color
+			
+			&::before
+				position: absolute
+				content: ""
+				width: 40px
+				height: 40px
+				background: url("../img/aside.png")
+				left: 32px
+				top: -2px
+			
+			&_profile::before
+				background-position-y: 406px
+			
+			&_companies::before
+				background-position-y: 359px
+			
+			&_friends::before
+				background-position-y: 315px
+			
+			&_notifications::before
+				background-position-y: 265px
+			
+			&_groups::before
+				background-position-y: 221px
+			
+			&_forums::before
+				background-position-y: 169px
+			
+			&_blog::before
+				background-position-y: 120px
+			
+			&_invites::before
+				background-position-y: 72px
+			
+			&_messages::before
+				background-position-y: 27px
+				height: 25px
+
+.main
+	margin-left: -5px
+
+.section
+	background: $white-color
+	position: relative
+	margin-top: 25px
+	box-shadow: 1px 0px 10px rgba(0,0,0, .1)
+
+	.title
+		padding: 8px 0 15px 5px
+		min-height: 86px
+		background: $grey-color
+
+	.content-block
+		padding: 26px 30px 0px 25px
+
+	h1
+		font-size: 30px
+		text-transform: uppercase
+
+	h3
+		margin-top: 27px
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 18px
+
+	ul
+		padding: 0
+		margin-bottom: 17px
+
+	li
+		list-style: none
+		display: inline
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 500
+		font-family: $Montserrat
+		padding-bottom: 20px
+		margin-right: 13px
+
+		&.active a
+			color: $accent
+
+		a
+			color: #aaa
+
+	.media-tabs-nav li 
+		a
+			color: $main-color
+		&.active a
+			color: $accent
+
+
+	
+	.notif-tabs-nav
+		margin-top: 10px
+	.notif-tabs-nav li
+		color: #aaa
+		&.active
+			color: $main-color
+
+	label
+		margin: 10px 0 10px
+
+	input
+		height: 37px
+		border-radius: 0
+		margin-bottom: 10px
+
+	.change-password
+		margin: 23px 0 0
+		font-family: $Montserrat
+		font-weight: bold
+		color: $main-color
+
+	.text-regular
+		font-weight: normal
+		margin: 11px 0 7px
+
+	.text-regular2
+		font-weight: normal
+		margin: 0px 0 7px
+
+	a
+		margin-left: 5px
+	
+	.save-changes
+		margin-top: 45px
+		margin-bottom: 5px
+.section_settings_general
+	padding-bottom: 15px
+.change-info
+	background: $white-color
+	position: relative
+	margin-top: 25px
+	box-shadow: 1px 0px 10px rgba(0,0,0, .1)
+	padding: 8px 28px
+
+	h3
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 18px
+		margin-bottom: 18px
+
+	p
+		font-family: $Montserrat
+		color: $main-color
+
+		span
+			font-weight: bold
+
+	button
+		margin-top: 10px
+
+	.attantion
+		color: #4a472e
+		background: $attantion-bg
+		border-left: $attantion-color 5px solid
+		margin-top: -7px
+		padding: 12px
+
+	.checkbox
+		margin-top: 22px
+		margin-bottom: 17px
+
+		label
+			padding-left: 0
+			min-height: 16px
+			font-weight: bold
+
+.section_notification li 
+  list-style: none
+  display: inline
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 500
+  font-family: "monsterrat"
+  font-weight: 500
+  color: #aaa
+  padding-bottom: 20px
+  margin-right: 13px
+
+.notice-list
+	margin-top: 0px
+
+	h4
+		margin-left: 0px	
+
+	ul
+		margin-left: -18px
+		margin-top: 	-8px
+
+
+	li
+		list-style: none
+		display: block
+		text-transform: none
+		font-size: 14px
+		font-weight: normal
+		font-family: $Montserrat
+		color: $main-color
+		padding-bottom: 20px
+		margin-right: -31px
+		margin-left: 	-8px
+		border-bottom: 	1px solid $border-form
+		min-height: 49px
+		padding-top: 15px
+		padding-left: 8px
+
+	.padding10
+		padding: 0
+
+	.radio
+		margin: 0
+		label
+			padding-left: 10px
+			margin: 0
+
+.profile-visibility
+	margin-top:	28px
+	padding-bottom: 77px
+	
+	h4
+		margin: 20px 0 14px
+
+	.select
+		margin-left: -16px
+		width: 	
+	
+	.select:after
+		content: "▼"
+		color: $accent
+		padding: 0 8px
+		font-size: 16px
+		position: absolute
+		right: 18px
+		top: 6px
+		z-index: 1
+		text-align: center
+		height: 100%
+		pointer-events: none
+		box-sizing: border-box
+
+	select
+		padding-right: 25px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		border-radius: 0
+
+.clear
+	clear: both
+	height: 25px
+	color: #fff
+
+	.save-settings
+		margin-top: 60px
+		margin-bottom: 5px
+
+.gallery-content
+	margin: 21px -48px 0 -13px
+
+	.col-md-4
+	 margin: 0 -5px 10px
+
+.gallery_intro_hover
+	padding: 0px
+	position: relative
+	overflow: hidden
+
+	&:hover .caption
+		opacity: 1
+		transform: translateY(47px)
+	img
+		z-index: 4
+
+	.caption
+		position: absolute
+		transition: all 0.3s ease-in-out
+		width: 100%
+
+	.caption-text
+		z-index: 10
+		color: #fff
+		background: $main-color
+		position: absolute
+		height: 47px
+		text-align: right
+		top: -47px
+		width: 100%
+
+	.btn-edit
+		margin: 12px 5px 0
+		color: #7794a1
+		background: url("../img/edit.png") 12px 0px no-repeat
+		font-weight: 500
+		text-transform: none
+		padding: 0 5px 0 36px
+
+		&:hover
+			background: url("../img/edit.png") 12px 0px no-repeat
+			transition: color .2s, background .2s, border .2s, opacity .2s
+
+	.btn-delete
+		margin: 12px 5px 0 0
+		color: $white-color
+		background: url("../img/delete.png") 12px 0px no-repeat
+		font-weight: 500
+		text-transform: none
+		padding: 0 10px 0 35px
+
+		&:hover
+			color: $white-color
+			background: url("../img/delete.png") 12px 0px no-repeat
+			transition: color .2s, background .2s, border .2s, opacity .2s
+
+.content-notif
+	padding: 15px 5px 0px 5px
+
+	.select
+		margin-left: 0px
+	
+	.select:after
+		content: "▼"
+		color: $accent
+		padding: 0 8px
+		font-size: 16px
+		position: absolute
+		right: 16px
+		top: 12px
+		z-index: 1
+		text-align: center
+		height: 100%
+		pointer-events: none
+		box-sizing: border-box
+
+	select
+		height: 45px
+		padding: 0px 44px 0 10px
+		color: $main-color
+		font-size: 14px
+		font-weight: 500
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		border-radius: 0
+		border: 1px solid $border-form
+		background: transparent
+
+	label
+		color: $main-color
+		font-size: 14px
+		font-weight: 500
+		margin-left: 33px
+		margin-right: 13px
+	
+.notifi-list
+	margin-top: 0px
+	
+	.clear
+		height: 0
+
+	h4
+		font-size: 14px
+		margin-top: 3px
+
+	ul
+		margin-left: 0px
+		margin-top: 	62px
+
+
+	li
+		list-style: none
+		display: block
+		text-transform: none
+		font-size: 14px
+		font-weight: normal
+		font-family: $Montserrat
+		color: $main-color
+		padding-bottom: 0px
+		margin-right: -5px
+		margin-left: 	-7px
+		border-bottom: 	1px solid $border-form
+		min-height: 50px
+		padding-top: 15px
+		padding-left: 0px
+	
+	.table-first-row .checkbox
+		margin: 0px 0 17px -5px
+
+		label
+			padding-left: 0
+			min-height: 16px
+			font-weight: bold
+			margin: 0
+
+	.checkbox
+		margin: 0px 0 17px -5px
+
+		label
+			padding-left: 0
+			min-height: 16px
+			font-weight: normal
+			margin: 0
+
+		span
+			margin-right: 16px
+
+	.date-rec
+		padding-left: 60px
+
+	.read-delete
+		padding-top: 1px
+		padding-left: 0
+
+		.read
+			width: 50px
+			height: 20px
+			border-right: 1px solid $main-color
+			float: left
+			padding-right: 57px
+
+		.delete
+			width: 50px
+			float: left
+
+	.read-delete a
+		text-transform: uppercase
+		font-weight: normal
+		color: $main-color
+		margin: 0 5px
+
+	.viewing
+		color: #a5a5a5
+		font-size: 12px
+		margin-left: 10px
+
+	.bulk-actions
+		margin-left: -5px
+
+		.btn-primary
+			margin: 15px 0 0 13px
+			padding-top: 8px
+
+//post
+.post
+	padding: 25px 10px
+
+	.author
+		color: $accent
+		font-size: 18px
+		font-weight: 500
+		padding-top: 10px
+
+	.date-post
+		color: #c1c1c1
+		font-size: 14px
+		padding-top: 15px
+
+	.carousel-inner
+		padding: 0  0 0 30px
+
+	.carousel-control.left
+		background: none
+
+	.carousel-control.right
+		background: none
+
+	.glyphicon-chevron-left
+    background: url(../img/triangel-arrow-left.png) no-repeat
+    margin-left: -53px
+
+	.glyphicon-chevron-left:before
+		content: none
+
+	.glyphicon-chevron-right
+    background: url(../img/triangel-arrow-right.png) no-repeat
+    margin-right: -72px
+
+    &:before
+    	content: none
+
+	.carousel
+  	top: 20px
+
+	.likeheart
+  	margin-top: 38px
+  	font-size: 18px
+  	font-weight: 500
+
+  	.fa-heart
+  		font-size: 20px
+  		margin-right: 10px
+  		color: #c1c1c1
+
+  		&.active
+  			color: $blue-color
+	.comments
+		h4
+			font-size: 24px
+			font-weight: 500
+			margin-bottom: 5px
+		
+		.comment
+			border-bottom: 1px solid $border-form
+			margin: 0 -25px
+			padding: 5px 0 15px
+			.author
+				float: left
+				width: 80%
+				padding: 16px 0 0 88px
+			.date-post
+				float: left
+				width: 17%
+				text-align: right
+			.clear
+				height: 0
+			.text-comments
+				color: $text-color
+				margin: 3px 0 0 -10px
+				p
+					margin: 0 15px 10px 0
+					line-height: 18px
+
+			.avatars
+				margin: -25px 0 0 10px
+	.add_comment
+		padding: 20px 0
+		textarea
+			width: 100%
+			height: 160px
+			text-align: left
+			font-size: 14px
+			color: $text-color
+			padding: 10px
+
+		.btn-primary
+			margin: 20px 3px 0px 10px
+			padding-top: 8px
+
+.invites
+	.content-block
+		padding: 20px 0
+	h3
+		font-size: 24px
+		font-weight: 500
+		text-transform: none
+		margin: 0 15px 10px
+		padding-top: 0
+
+	p
+		font-size: 16px
+		margin-left: 15px
+
+	.viewing
+		color: #a5a5a5
+		font-size: 12px
+		margin-left: 15px
+
+	.invites-table
+	  width: 100%
+	  text-align: center
+	  border-collapse: collapse
+	  margin: 20px 0 20px
+	
+	.divTable.invites-table
+		.divTableHead
+	  	padding: 3px 4px
+	
+		.divTableBody
+			.divTableCell
+		  	font-size: 13px
+		
+		.divTableHeading
+			//background: #F6F6F6
+			border-bottom: 1px solid $border-form
+		
+			.divTableHead
+				font-size: 14px
+				color: #333333
+				text-align: center
+				padding: 15px 0
+
+			.del
+				width: 5%
+
+			.email
+				width: 20%
+				text-align: left
+
+			.group
+				font-weight: bold
+				width: 38%
+
+			.sent
+				width: 19%
+				text-align: left
+			
+			.accepted
+				width: 20%
+
+			a
+				text-decoration: none
+				color: #000
+				&:after
+					content: "▼"
+					padding-left: 10px
+					font-size: 16px
+			.active
+				color: $blue-color
+		
+				&:first-child
+					border-left: none
+		
+		.divTableCell
+			border-bottom: 1px solid $border-form
+
+			&.email
+				text-align: left
+				padding-left: 10px
+
+			&.sent
+				text-align: left
+				padding-left: 10px
+
+
+			
+	
+	.divTable 
+		display: table 
+	.divTableRow 
+		display: table-row 
+	.divTableHeading 
+		display: table-header-group
+	.divTableCell, .divTableHead 
+		display: table-cell
+		height: 50px
+		padding-top: 15px
+	.divTableHeading 
+		display: table-header-group
+	.divTableFoot 
+		display: table-footer-group
+	.divTableBody 
+		display: table-row-group
+
+	.footer-table
+		.viewing
+			margin-left: 0px
+		.clear-block
+			float: left
+
+		a
+			color: #000
+			text-decoration: none
+		.border
+			height: 20px
+			font-size: 14px
+			border-right: 1px solid $main-color
+			margin-left: 40px
+			padding-right: 10px
+
+.new-members
+	.content-block
+		padding: 20px 20px 20px 15px
+	h3
+		font-size: 24px
+		font-weight: 500
+		text-transform: none
+		margin: 0 0 10px
+		padding-top: 0
+
+	p
+		font-size: 16px
+
+	.viewing
+		color: #a5a5a5
+		font-size: 12px
+		margin-top: -10px
+
+	.step
+		font-size: 16px
+		margin-bottom: 20px
+
+		span
+			font-weight: bold
+
+	textarea
+		width: 100%
+		height: 160px
+		text-align: left
+		font-size: 14px
+		color: $text-color
+		padding: 10px
+		margin-bottom: 20px
+
+
+
+
+
+@import "media" // Всегда в конце
