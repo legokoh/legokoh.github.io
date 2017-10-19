@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 Main</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/flipclock.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+<!-- custom scrollbar plugin -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+
+<div id="all">
+	<div class="container">
+		<section class="make-order">
+			<button type="button" class="close"></button>
+			<div class="row" style="height: 101px;"></div>
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 contacts"><h4 class="title-block">Ваши контакты</h4>
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<input placeholder="Начните ввод адреса в этом поле" class="form-control name validate['required']" type="text">
+
+						</div>
+						<div class="col-xs-1"></div>
+						<div class="col-xs-4">
+							<div class="checkbox call-check">
+								<label>
+									<input type="checkbox" value="" checked>
+									<span class="cr agree"><i class="cr-icon fa fa-check"></i></span>
+									Я даю свое согласие на обработку<br>моих персональных данных с соответствии <br>с политикой конфеденциальности <br>и законом фз-152
+								</label>
+							</div>
+					  	</div>
+					  	<div class="clearfix"></div>
+					  	
+					  	<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<input placeholder="Начните ввод адреса в этом поле" class="form-control phone validate['required']" type="text">
+
+						</div>
+						<div class="col-xs-5"></div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<input placeholder="Начните ввод адреса в этом поле" class="form-control mail validate['required']" type="text">
+						</div>
+						<div class="col-xs-5"></div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-11">
+							<div class="checkbox call-check">
+								<label class="call">
+									<input type="checkbox" value="">
+									<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+									Мне нужно что-то обсудить с вами по телефону перед заказом
+								</label>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-1">
+							<a href="#" class="btn submit">Ок</a>
+						</div>
+						<div class="col-xs-10">
+							<div class="tip">или нажмите Enter</span></div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 address"><h4 class="title-block">Адрес доставки</h4>
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<p>Укажите все, что полезно для курьера:<br>
+								<span>Город, улица, дом, квартира, этаж, код домофона, как найти на местности...</span></p>
+
+						</div>
+						<div class="col-xs-5"></div>
+				  		<div class="clearfix"></div>
+				  		
+					  	<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<textarea placeholder="Начните ввод адреса в этом поле" class="form-control" type=""></textarea>
+
+						</div>
+						<div class="col-xs-5"></div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-1">
+							<a href="#" class="btn submit">Ок</a>
+						</div>
+						<div class="col-xs-10">
+							<div class="tip">или нажмите Enter</span></div>
+						</div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-11">
+					  		<div class="checkbox register-check">
+								<label class="call">
+									<input type="checkbox" value="">
+									<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+									зарегистрировать меня на сайте
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 scedule"><h4 class="title-block">Дата и время доставки</h4>
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<div class="radio">
+								<label>
+									<input type="radio" name="o3" value="">
+									<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+									Доставить как можно быстрее
+								</label>
+								<label>
+									<input type="radio" name="o3" value="">
+									<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+									Запланировать на потом
+								</label>
+							</div>
+						</div>
+						<div class="col-xs-5"></div>
+				  		<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-1">
+							<a href="#" class="btn submit">Ок</a>
+						</div>
+						<div class="col-xs-10">
+							<div class="tip">или нажмите Enter</span></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 comment-to-order"><h4 class="title-block">Комментарии к заказу</h4>
+					<div class="row">
+					  	<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<textarea placeholder="Начните ввод адреса в этом поле" class="form-control" type=""></textarea>
+
+						</div>
+						<div class="col-xs-5"></div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<p>Пример: вход через арку, домофон и так далее</p>
+
+						</div>
+						<div class="col-xs-5"></div>
+				  		<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-1">
+							<a href="#" class="btn submit">Ок</a>
+						</div>
+						<div class="col-xs-10">
+							<div class="tip">или нажмите Enter</span></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 payments"><h4 class="title-block">Оплата</h4>
+					<div class="row">
+					  	<div class="col-xs-1"></div>
+						<div class="col-xs-6">
+							<p>Выберите доступный способ оплаты:</p>
+						</div>
+						<div class="col-xs-5"></div>
+						<div class="clearfix"></div>
+						
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6 checkbox">
+								<label class="payments-method">
+									<div class="method1">
+										<div class="method1-checkbox">
+											<input type="checkbox" value="">
+											<span class="cr"><i class="cr-icon fa fa-check"></i></span></div>
+										<div class="method1-icon"></div>
+										<div class="method1-title">Наличными курьеру</div>
+									
+										
+										
+									</div>
+								</label>
+								<label class="payments-method">
+									<div class="method2">
+										<div class="method2-checkbox">
+											<input type="checkbox" value="">
+											<span class="cr"><i class="cr-icon fa fa-check"></i></span></div>
+										<div class="method2-icon"></div>
+										<div class="method2-title">Банковсской картой курьеру<br><span>Взымается дополнительная комиссия 10% от суммы платежа</span>
+										</div>
+									</div>
+								</label>
+								<label class="payments-method">
+									<div class="method3">
+										<div class="method3-checkbox">
+											<input type="checkbox" value="">
+											<span class="cr"><i class="cr-icon fa fa-check"></i></span></div>
+										<div class="method3-icon"></div>
+										<div class="method3-title">Банковсской картой онлайн<br><span>Взымается дополнительная комиссия 10% от суммы платежа</span>
+										</div>
+									</div>
+								</label>
+						</div>
+						<div class="col-xs-5"></div>
+				  		<div class="clearfix"></div>
+					
+						<div class="col-xs-1"></div>
+						<div class="col-xs-1 " >
+							<a href="#" class="btn submit" style="margin-top: -2px;">Ок</a>
+						</div>
+						<div class="col-xs-10">
+							<div class="tip" style="margin-top: 11px;">или нажмите Enter</span></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 payments" ></div>		
+			</div>
+			<div class="row thank-for-order">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-11 ">
+					<h4 class="title-block">Спасибо за заказ! № 23322</h4>
+				</div>
+				<div class="col-xs-2"></div>
+				<div class="col-xs-5">
+					<p>Вы оформили заказ № 23322.<br>
+					Наши менеджеры пляшут от удовольствия джига-джига и пока не могут вам позвонить.<br>Как у них пройдет состояние эйфории они обязательно с вами свяжутся. Обычно на это уходит 1-2 дня.</p>
+					
+					<p>Если они всетаки про вас забудут, позвоните директору телефон ХХХ - ХХХ - ХХХХ</p>
+
+				</div>
+				<div class="col-xs-5"></div>
+				<div class="clearfix"></div>
+				
+				<div class="col-xs-2"></div>
+				<div class="col-xs-10">
+					<a href="#" class="btn download">Скачать счет в PDF</a>
+				</div>
+				
+				<div class="col-xs-2"></div>
+				<div class="col-xs-5">
+					<div class="invoice">
+						<p class="invoice-number">Чек №23322</p>
+						<div class="invoice-item">
+							<div class="invoice-pr-img" >
+								<img src="images/products/products01.png" class="img-responsive">
+							</div>
+							<div class="invoice-pr-desc" >
+								<p class="invoice-pr-name" >Рыба пан "Финкенвердер искусство"</p>
+								<div class="invoice-pr-price" >1 071<span >И</span></div>
+								<div class="invoice-pr-multiplication" >x</div>
+								<div class="invoice-pr-quantity" >10 шт.</div>
+								<div class="invoice-pr-equally-symbol" >=</div>
+								<div class="invoice-pr-equally" >10 071<span >И</span></div>
+							</div>
+						</div>
+						<div class="invoice-item">
+							<div class="invoice-pr-img" >
+								<img src="images/products/products02.png" class="img-responsive">
+							</div>
+							<div class="invoice-pr-desc" >
+								<p class="invoice-pr-name" >Рыба пан "Финкенвердер искусство"</p>
+								<div class="invoice-pr-price" >1 071<span >И</span></div>
+								<div class="invoice-pr-multiplication" >x</div>
+								<div class="invoice-pr-quantity" >10 шт.</div>
+								<div class="invoice-pr-equally-symbol" >=</div>
+								<div class="invoice-pr-equally" >10 071<span >И</span></div>
+							</div>
+						</div>
+						<div class="invoice-item">
+							<div class="invoice-pr-img" >
+								<img src="images/products/products03.png" class="img-responsive">
+							</div>
+							<div class="invoice-pr-desc" >
+								<p class="invoice-pr-name" >Рыба пан "Финкенвердер искусство"</p>
+								<div class="invoice-pr-price" >1 071<span >И</span></div>
+								<div class="invoice-pr-multiplication" >x</div>
+								<div class="invoice-pr-quantity" >10 шт.</div>
+								<div class="invoice-pr-equally-symbol" >=</div>
+								<div class="invoice-pr-equally" >10 071<span >И</span></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<hr>
+						<div class="invoice-total-block">
+							<div class="col-xs-6">
+
+									<p style="line-height: 27px;">
+										Сумма заказа<br>
+										Скидка<br>
+										Цена доставки
+									</p>
+									<p class="total-text">Итого</p>
+
+							</div>
+							<div class="col-xs-6">
+
+									<p>
+										15 560 <span>ь</span><br>
+										560 <span>ь</span><br>
+										0 <span>ь</span>
+									</p>
+									<p class="total">15 560 <span>Ь</span></p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<hr>
+						<div class="shipping-information">
+							<p class="sector-title">Ваши данные</p>
+							<p class="sector-text-contact-data">
+								Иванов Иван<br>
+								+7 909 1503444<br>
+								me@ldmco.ru
+							</p>
+							<p class="sector-title">Адрес</p>
+							<p class="sector-text">
+								Москва, Зеленоград, первый Петровский переулок 
+								дом 34 квартира 33, этаж 5, домофон 34к4345
+							</p>
+							<hr>
+							<p class="sector-title">Способ доставки</p>
+							<p class="sector-text">
+								г. Москва, ул 905 года, дом 33, офис 134, станция метро Сокольники.
+							</p>
+							<hr>
+							<p class="sector-title">Информация о получателе</p>
+							<p class="sector-text-contact-data">
+								Физ лицо<br>
+								Иванов<br>
+								Иванович
+							</p>
+							<p class="sector-title">Информация для доставки</p>
+							<p class="sector-text">
+								10 этаж<br>
+								34 квартира
+							</p>
+							<hr>
+							<p class="sector-title">Комментарий к заказу</p>
+							<p class="sector-text">
+								Через арку проехать и повернуть на право, синяя дверь
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script src="js/classie.js"></script>
+
+	
+<script type="text/javascript">
+	$(document).ready(function() {
+		var WidthModal = document.getElementsByClassName("overlay");
+		var WidthModal = document.getElementsByClassName("overlay2");
+		var WidthModal = document.getElementsByClassName("overlay3");
+		WidthModal[0].style.width = document.body.clientWidth-262 + "px";
+	});
+
+	$(document).ready(function() {
+		var list = document.getElementsByClassName("basket-pole");
+		list[0].style.height = document.body.clientHeight-262 + "px";
+		list[0].style.lineHeight = document.body.clientHeight-262 + "px";
+	});
+	(function($){
+		$(window).on("load",function(){
+			$(".basket-pole-with-products .frame").mCustomScrollbar({
+				setHeight:document.body.clientHeight-412,
+				theme:"dark-3"
+			});				
+		});
+	})(jQuery);
+	jQuery(document).on('click', function(e) {
+
+        var target = jQuery(e.target);
+        var wrapp = jQuery('.js-callMe-formWrapp');
+
+        if (target.closest(".js-callMe-click").length || target.closest(".js-callMe-formWrapp").length) return;
+        if (wrapp.is(':visible')) {
+            wrapp.slideToggle(400);
+        }
+        e.stopPropagation();
+    });
+
+    jQuery('.js-callMe-formWrapp-close').on('click', function() {
+        jQuery(this).parents('.js-callMe-formWrapp').slideUp(400);
+    });
+
+    jQuery('.js-callMe-click').on('click', function() {
+        var wrapp = jQuery(this).parents('.js-callMe-wrapp');
+        wrapp.find('.js-callMe-formWrapp').slideToggle(400);
+    });
+
+    jQuery('.js-callMe-form').on('submit', function() {
+
+        var form = jQuery(this);
+        jQuery.ajax({
+            url: '?option=com_ksenmart&task=shopajax.callback',
+            type: 'POST',
+            data: {
+                phone: form.find('[name="phone"]').val(),
+            },
+            success: function(response) {
+                jQuery('.js-callMe-formWrapp').slideToggle(400, function() {
+                    KMShowMessage(response);
+                });
+            }
+        });
+
+        return false;
+    });
+</script>
+
+</body>
+</html>
