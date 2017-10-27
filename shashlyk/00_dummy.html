@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>00 Dummy</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/flipclock.js"></script>
+	<meta charset="utf-8">
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #1C1B1B; }</style>
+
 </head>
-<body style="background:url('images/background0.png') top center">
+<body>
 
-<div id="all">
-	<div class="header">
+<div id="intro">
+	<section class="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-1">
@@ -33,14 +38,14 @@
 				</div>
 				<div class="col-xs-8">
 					<div class="welcome">
-						<p class="bounceIn wow" data-wow-delay="0.1s">Доставка <br>вкуснейшего шашлыка</p>
-						<p class="bounceIn wow yellow" data-wow-delay="0.3s">по Зеленограду</p>
+						<p>Доставка<br>вкуснейшего шашлыка</p>
+						<p class="yellow">по Зеленограду</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="freeform">
+	</section>
+	<section class="freeform">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-1"></div>
@@ -70,8 +75,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="timer">
+	</section>
+	<section class="timer">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-1"></div>
@@ -82,27 +87,20 @@
 			<div class="row">
 				<div class="col-xs-1"></div>
 				<div class="col-xs-8">
-					<div class="clock  bounceInLeft wow animated" data-wow-delay="0.3s"></div>
+					<div class="clock"></div>
 					<div class="dhm">
 						<p class="days">дня</p>
 						<p class="hours">часов</p>
 						<p class="minutes">минут</p>
 					</div>
-					
-					
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </div>
-<script type="text/javascript">
-	var clock = $('.clock').FlipClock(3600 * 24 * 3, {
-		clockFace: 'DailyCounter',
-		countdown: true,
-		language: 'ru',
-		showSeconds: false
-	});
-</script>
+
+<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
 
 
 </body>
