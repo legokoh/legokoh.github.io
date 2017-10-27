@@ -3935,16 +3935,16 @@ a.uline {
         content: '';
         display: block;
         position: absolute; }
-      .topblock .cont .phone .btn.profile {
-        float: left;
-        color: #fff;
-        height: 43px;
-        padding-top: 9px;
-        padding-left: 50px;
-        padding-right: 28px;
-        background: #C1252B url(../img/icons/office.png) 28px 13px no-repeat !important;
-        border: 2px #E27B7F solid;
-        margin: 3px 22px 0 -3px; }
+    .topblock .cont .btn.profile {
+      float: left;
+      color: #fff;
+      height: 43px;
+      padding-top: 9px;
+      padding-left: 50px;
+      padding-right: 28px;
+      background: #C1252B url(../img/icons/office.png) 28px 13px no-repeat !important;
+      border: 2px #E27B7F solid;
+      margin: 3px 22px 0 -3px; }
   .topblock .fixed {
     margin-bottom: 107px; }
 
