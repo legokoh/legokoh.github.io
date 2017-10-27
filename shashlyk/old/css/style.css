@@ -233,7 +233,7 @@ h1, h2, h3, h4 {
 	padding: 23px 0 0 19px;
 	height:295px;
 	width: 100%;
-	background: url(../images/underline.png) no-repeat 425px 100px, url(../images/zayavka_background.png) no-repeat top center;
+	background: url(../images/zayavka_background.png) no-repeat top center;
 }
 .freeform h3 {
 	font-family: 'Open Sans';
@@ -242,6 +242,14 @@ h1, h2, h3, h4 {
 	color: #fff;
 	line-height: 1.3;
 	margin-left: 75px;
+}
+.freeform span {
+	border-style: solid;
+  border-width: 0px 0px 4px;
+  -moz-border-image: url(../images/underline.png) 0 0 4 repeat;
+  -webkit-border-image: url(../images/underline.png) 0 0 4 repeat;
+  -o-border-image: url(../images/underline.png) 0 0 4 repeat;
+  border-image: url(../images/underline.png) 0 0 4;
 }
 .freeform form {
 	margin-top: 18px;
@@ -361,8 +369,6 @@ h1, h2, h3, h4 {
 	margin: 183px 0 31px -103px;
 	padding-left: 103px;
 	visibility: visible;
-	animation-delay: 0.7s;
-	animation-name: bounceInLeft;
 }
 
 .right-fixed-block {
@@ -384,7 +390,7 @@ h1, h2, h3, h4 {
 .right-fixed-block h4 {
 	font-size: 22px;
     line-height: 22px;
-    padding: 13px 20px 12px 20px;
+    padding: 13px 23px 12px;
 	text-align: center;
 }
 .right-fixed-block h4 span {
@@ -897,13 +903,20 @@ h1, h2, h3, h4 {
 }
 .topmenu.fixed {
 	position: fixed;
-	background: url(../images/header-fixed.png) repeat-x;
+	background: url(../images/header-fixed-scroll.png) repeat-x;
 	width: 100%;
-	height: 164px;
+	height: 218px;
 	top:0;
 	left:0;
 	transition: .5s;
 	z-index: 10;
+  border-style: solid;
+  border-width: 0px 0px 54px;
+  -moz-border-image: url(../images/menu-bottom-border.png) 0 0 54 repeat;
+  -webkit-border-image: url(../images/menu-bottom-border.png) 0 0 54 repeat;
+  -o-border-image: url(../images/menu-bottom-border.png) 0 0 54 repeat;
+  border-image: url(../images/menu-bottom-border.png) 0 0 54 repeat;
+}
 }
 .topmenu.fixed .products-menu {
 	float: left;
@@ -1015,12 +1028,12 @@ border: 5px solid #EBE9E6;
     padding-left: 27px;
 	background: url(../images/icons/show-more.png) left center no-repeat;
 }
-.show-more-block .show-more a {
+.show-more-block .show-more span {
 	color: #000;
 	font-weight: 600;
 	border-bottom: #95989A 1px dashed;
 }
-.show-more-block .show-more a:hover {
+.show-more-block .show-more span:hover {
 	border: none;
 	transition: color .2s, background .2s, border .2s, opacity .2s;
 }
@@ -1850,9 +1863,9 @@ label.call {
 	background: #fff;
 	border-style: solid;
 	border-width: 0px 0px 11px;
-	-moz-border-image: url(http://www.w3.org/TR/css3-background/border.png) 0 0 11 repeat;
-	-webkit-border-image: url(http://www.w3.org/TR/css3-background/border.png) 0 0 11 repeat;
-	-o-border-image: url(http://www.w3.org/TR/css3-background/border.png) 0 0 11 repeat;
+	-moz-border-image: url(../images/border-bottom-invoice.png) 0 0 11 repeat;
+	-webkit-border-image: url(../images/border-bottom-invoice.png) 0 0 11 repeat;
+	-o-border-image: url(../images/border-bottom-invoice.png) 0 0 11 repeat;
 	border-image: url(../images/border-bottom-invoice.png) 0 0 11 repeat;
 }
 .invoice hr {
@@ -1995,6 +2008,8 @@ p.invoice-pr-name {
 }
 .office.topmenu.fixed {
 	height: 93px;
+	background: url(../images/header-fixed.png) repeat-x;
+	border-style: none;
 }
 .office.topmenu {
     height: 55px;
@@ -2152,7 +2167,6 @@ p.invoice-pr-name {
 }
 .articles-block {
 	margin: 0 0 32px 14px;
-	outline: 1px solid #000;
 	padding: 0;
 	width: 849px;
 }
