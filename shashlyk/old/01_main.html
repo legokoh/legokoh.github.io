@@ -388,6 +388,31 @@
 		$(window).bind('resize',function(){
 			screenClass();
 		});
+
+		function screenClass2() {
+		var scrollBottom = $(window).scrollTop() + $(window).height();
+		if ($(window).innerHeight() > 650) {
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 0) {
+					$('.right-fixed-block').addClass('fixed-top');
+				} else {
+					$('.right-fixed-block').removeClass('fixed-top');
+				};
+			});
+		} else { 
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 170) {
+					$('.right-fixed-block').addClass('fixed-bottom');
+				} else {
+					$('.right-fixed-block').removeClass('fixed-bottom');
+				};
+			});
+		}
+	};
+	screenClass2();
+	$(window).bind('resize',function(){
+		screenClass2();
+	});
 	</script>
 </body>
 </html>

@@ -25,124 +25,171 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
+<script type="text/javascript">
+(function($) {
+	$(document).ready(function() {
+		var $panel = $('.right-fixed-block');
+		if ($panel.length) {
+	    var $sticker = $panel.children('.panel-sticker');
+	    var $stickerImg = $('.panel-img');
+	    var showPanel = function() {
+        $panel.animate({
+            right: '-=263',
+        }, 200, function() {
+            $(this).addClass('visible');
+            $sticker.addClass('visible-sticker');
+            $stickerImg.removeClass('hide-panel');
+            $stickerImg.addClass('basket');
+        });
+	    };
+	    var hidePanel = function() {
+	        $panel.animate({
+	            right: '+=263',
+	        }, 200, function() {
+	            $(this).removeClass('visible');
+	            $sticker.removeClass('visible-sticker');
+	            $stickerImg.removeClass('basket');
+	            $stickerImg.addClass('hide-panel');
+	        });
+	    };
+	    $sticker
+        .children('div').click(function() {
+            if ($panel.hasClass('visible')) {
+                hidePanel();
+            }
+            else {
+                showPanel();
+            }
+        });
+      }
+    });
+})(jQuery);
+
+
+</script>
 </head>
 <body>
-
-<div class="right-fixed-block" style="background: #fff; ">
-	<div class="row ">
-		<div class="col-xs-12 title">
-			<h4>Ваш заказ:<br>8 блюд на <span>12 900 <span class="currency">Ф</span></span></h4>
-		</div>
-	</div>
-	<hr>
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="text"><a href="#" class="btn checkout">Оформить заказ</a>
-				<a href="" data-toggle="modal" data-target="#myModal1" class="more-cheaply" >хочу дешевле</a>
+<div class="right-fixed-block" style="background: #fff;">
+	<div class="panel-sticker">
+      <div class="panel-img hide-panel"></div> 
+  </div>
+	<div class="panel-content">
+			
+		<div class="row ">
+			<div class="col-xs-12 title">
+				<h4>Ваш заказ:<br>8 блюд на <span>12 900 <span class="currency">Ф</span></span></h4>
 			</div>
 		</div>
-	</div>
-	<div class="row basket-pole-with-products">
-		<div class="col-xs-12">
-			<div class="frame">
-				<img src="images/icons/barbecue.png" class="barbecue-icon"><h5>Шашлык</h5>
-
-				<div class="product-item-basket">
-					<img src="images/products/products01.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>194<span>Ф</span></p><p class="portion">1 порция</p>
-					</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="text"><a href="#" class="btn checkout">Оформить заказ</a>
+					<a href="" data-toggle="modal" data-target="#myModal1" class="more-cheaply" >хочу дешевле</a>
 				</div>
-				<div class="product-item-basket">
-					<img src="images/products/products02.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>644<span>Ф</span></p><p class="portion">2 порции</p>
-					</div>
-				</div>
-				<div class="product-item-basket">
-					<img src="images/products/products03.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>175<span>Ф</span></p><p class="portion">1 порция</p>
-					</div>
-				</div>
-				<div class="product-item-basket">
-					<img src="images/products/products04.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>460<span>Ф</span></p><p class="portion">2 порции</p>
-					</div>
-				</div>
-				<img src="images/icons/additive.png" class="additive-icon"><h5>К шашлыку</h5>
-
-				<div class="product-item-basket">
-					<img src="images/products/products01.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>194<span>Ф</span></p><p class="portion">1 порция</p>
-					</div>
-				</div>
-				<div class="product-item-basket">
-					<img src="images/products/products02.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>644<span>Ф</span></p><p class="portion">2 порции</p>
-					</div>
-				</div>
-				<div class="product-item-basket">
-					<img src="images/products/products03.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>175<span>Ф</span></p><p class="portion">1 порция</p>
-					</div>
-				</div>
-				<div class="product-item-basket">
-					<img src="images/products/products04.png">
-					<div class="count">
-						<div class="count-plus"><a href="">+</a></div>
-						<div class="count-minus"><a href="">-</a></div>
-					</div>
-					<div class="price-count">
-						<p>460<span>Ф</span></p><p class="portion">2 порции</p>
-					</div>
-				</div>
-				<div style="height: 40px;"></div>
 			</div>
 		</div>
-	</div>
-	<div class="row basket-info">
-		<div class="col-xs-12">
-			<div class="clear-basket-block">
-				<div class="clear-basket"><a href="#" class="uline">Очистить корзину</a></div>
-			</div>
-			<p class="time-delivery">Доставим за 30 минут с момента заказа</p>
-			<hr>
-			<p class="free-delivery">Бесплатная доставка <br><span>при сумме заказа от 500 руб</span></p>
-			<p class="sale">Скидки за бонусы <br><span>Для постоянных клиентов</span></p>
+		<div class="row basket-pole-with-products">
+			<div class="col-xs-12">
+				<div class="frame">
+					<img src="images/icons/barbecue.png" class="barbecue-icon"><h5>Шашлык</h5>
 
+					<div class="product-item-basket">
+						<img src="images/products/products01.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>194<span>Ф</span></p><p class="portion">1 порция</p>
+						</div>
+					</div>
+					<div class="product-item-basket">
+						<img src="images/products/products02.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>644<span>Ф</span></p><p class="portion">2 порции</p>
+						</div>
+					</div>
+					<div class="product-item-basket">
+						<img src="images/products/products03.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>175<span>Ф</span></p><p class="portion">1 порция</p>
+						</div>
+					</div>
+					<div class="product-item-basket">
+						<img src="images/products/products04.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>460<span>Ф</span></p><p class="portion">2 порции</p>
+						</div>
+					</div>
+					<img src="images/icons/additive.png" class="additive-icon"><h5>К шашлыку</h5>
+
+					<div class="product-item-basket">
+						<img src="images/products/products01.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>194<span>Ф</span></p><p class="portion">1 порция</p>
+						</div>
+					</div>
+					<div class="product-item-basket">
+						<img src="images/products/products02.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>644<span>Ф</span></p><p class="portion">2 порции</p>
+						</div>
+					</div>
+					<div class="product-item-basket">
+						<img src="images/products/products03.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>175<span>Ф</span></p><p class="portion">1 порция</p>
+						</div>
+					</div>
+					<div class="product-item-basket">
+						<img src="images/products/products04.png">
+						<div class="count">
+							<div class="count-plus"><a href="">+</a></div>
+							<div class="count-minus"><a href="">-</a></div>
+						</div>
+						<div class="price-count">
+							<p>460<span>Ф</span></p><p class="portion">2 порции</p>
+						</div>
+					</div>
+					<div style="height: 40px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row basket-info">
+			<div class="col-xs-12">
+				<div class="clear-basket-block">
+					<div class="clear-basket"><a href="#" class="uline">Очистить корзину</a></div>
+				</div>
+				<p class="time-delivery">Доставим за 30 минут с момента заказа</p>
+				<hr>
+				<p class="free-delivery">Бесплатная доставка <br><span>при сумме заказа от 500 руб</span></p>
+				<p class="sale">Скидки за бонусы <br><span>Для постоянных клиентов</span></p>
+
+			</div>
 		</div>
 	</div>
 </div>
@@ -770,6 +817,33 @@
 	$(window).bind('resize',function(){
 		screenClass();
 	});
+
+	function screenClass2() {
+		var scrollBottom = $(window).scrollTop() + $(window).height();
+		if ($(window).innerHeight() > 650) {
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 0) {
+					$('.right-fixed-block').addClass('fixed-top');
+				} else {
+					$('.right-fixed-block').removeClass('fixed-top');
+				};
+			});
+		} else { 
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 170) {
+					$('.right-fixed-block').addClass('fixed-bottom');
+				} else {
+					$('.right-fixed-block').removeClass('fixed-bottom');
+				};
+			});
+		}
+	};
+	screenClass2();
+	$(window).bind('resize',function(){
+		screenClass2();
+	});
+
+
 </script>
 
 </body>

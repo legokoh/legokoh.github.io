@@ -371,12 +371,37 @@ h1, h2, h3, h4 {
 	visibility: visible;
 }
 
+
+.panel-sticker {
+    float: right;
+    position: absolute;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.panel-img {
+	width: 45px;
+	height: 45px;
+}
+.hide-panel {
+	background: url(../images/icons/close.png) no-repeat;
+}
+.basket {
+	background: #C1252B url(../images/icons/basket.png) no-repeat 10px;
+	border-radius: 45px;
+
+}
+.visible-sticker{
+		position: absolute;
+		right: 270px;
+		top: 90px;
+}
+
 .right-fixed-block {
-	position: fixed; 
+	position: absolute; 
 	right:0; 
-	top:0; 
 	width: 262px; 
-	height: 100%; 
+	min-height: 100%; 
 	z-index: 1450; 
 	background: #fff; 
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.09); 
@@ -429,7 +454,7 @@ h1, h2, h3, h4 {
 	padding-top:187px;
 }
 .right-fixed-block .basket-info {
-	height: 165px;
+	height: 195px;
 }
 .right-fixed-block .basket-info .time-delivery {
 	font-size: 13px; 
@@ -456,7 +481,7 @@ h1, h2, h3, h4 {
 .right-fixed-block .basket-info .sale {
 	font-size: 13px; 
 	line-height: 15px;
-	padding: 0px 25px 0 76px; 
+	padding: 0px 25px 10px 76px; 
 	background: url(../images/icons/moneybox.png) 39px 0px no-repeat; 
 	margin-top: 21px;
 }
@@ -466,6 +491,19 @@ h1, h2, h3, h4 {
 	color: #000; 
 	opacity: 0.5; 
 	line-height: 14px;
+}
+
+.right-fixed-block.fixed-top {
+	position: fixed;
+	top:0px;
+	right:0;
+	z-index: 2000;
+}
+.right-fixed-block.fixed-bottom {
+	position: fixed;
+	bottom:0px;
+	right:0;
+	z-index: 2000;
 }
 
 .btn.checkout {
@@ -485,11 +523,13 @@ h1, h2, h3, h4 {
 
 .basket-pole-with-products {
 	margin-bottom: -70px;
+	min-height:345px;
 }
 .basket-pole-with-products .frame {
 	padding: 8px 0px;
 	float: left;
 	margin-bottom: 25px;
+	min-height: 250px;
 	width: 251px;
 }
 
@@ -565,6 +605,7 @@ h1, h2, h3, h4 {
 	background: url(../images/white-gradient.png); 
 	position: relative; 
 	top:-45px; 
+	left: 2px;
 	margin-top: -25px; 
 	margin-bottom: -30px;
 }
@@ -1018,9 +1059,9 @@ h1, h2, h3, h4 {
 }
 
 .show-more-block .row {
-border: 5px solid #EBE9E6;
-    margin: 45px 0 45px -5px;
-    height: 70px;
+	border: 5px solid #EBE9E6;
+	margin: 45px 0 45px -5px;
+	height: 70px;
 }
 .show-more-block .show-more {
 	width: 135px;
