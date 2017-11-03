@@ -1,82 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>03 Personal cabinet</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/flipclock.js"></script>
+	<meta charset="utf-8">
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+	<title>01 Main Filled Cart</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #1C1B1B; }</style>
+
 </head>
 <body>
-
-<div id="all">
-	<div class="right-fixed-block animated">
+<div id="profile">
+	<section class="right-fixed-block" style="background: #fff; ">
+		<div class="panel-sticker">
+      <div class="panel-img hide-panel"></div> 
+	  </div>
+		<div class="panel-content">
+				
 			<div class="row ">
 				<div class="col-xs-12 title">
-					<h4>Ждем ваш заказик</h4>
+					<h4>Ваш заказ:<br>8 блюд на <span>12 900 <span class="currency">Ф</span></span></h4>
 				</div>
 			</div>
 			<hr>
-			<div class="row basket-pole">
+			<div class="row">
 				<div class="col-xs-12">
-					<div class="text">Просто перетащите сюда блюда, или нажмие кнопку с корзинкой рядом с ценой</div>
+					<div class="text"><a href="#" class="btn checkout">Оформить заказ</a>
+						<a href="" data-toggle="modal" data-target="#myModal1" class="more-cheaply" >хочу дешевле</a>
+					</div>
+				</div>
+			</div>
+			<div class="row basket-pole-with-products">
+				<div class="col-xs-12">
+					<div class="frame">
+						<img src="img/icons/barbecue.png" class="barbecue-icon"><h5>Шашлык</h5>
+
+						<div class="product-item-basket">
+							<img src="img/products/products01.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>194<span>Ф</span></p><p class="portion">1 порция</p>
+							</div>
+						</div>
+						<div class="product-item-basket">
+							<img src="img/products/products02.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>644<span>Ф</span></p><p class="portion">2 порции</p>
+							</div>
+						</div>
+						<div class="product-item-basket">
+							<img src="img/products/products03.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>175<span>Ф</span></p><p class="portion">1 порция</p>
+							</div>
+						</div>
+						<div class="product-item-basket">
+							<img src="img/products/products04.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>460<span>Ф</span></p><p class="portion">2 порции</p>
+							</div>
+						</div>
+						<img src="img/icons/additive.png" class="additive-icon"><h5>К шашлыку</h5>
+
+						<div class="product-item-basket">
+							<img src="img/products/products01.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>194<span>Ф</span></p><p class="portion">1 порция</p>
+							</div>
+						</div>
+						<div class="product-item-basket">
+							<img src="img/products/products02.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>644<span>Ф</span></p><p class="portion">2 порции</p>
+							</div>
+						</div>
+						<div class="product-item-basket">
+							<img src="img/products/products03.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>175<span>Ф</span></p><p class="portion">1 порция</p>
+							</div>
+						</div>
+						<div class="product-item-basket">
+							<img src="img/products/products04.png">
+							<div class="count">
+								<div class="count-plus"><a href="">+</a></div>
+								<div class="count-minus"><a href="">-</a></div>
+							</div>
+							<div class="price-count">
+								<p>460<span>Ф</span></p><p class="portion">2 порции</p>
+							</div>
+						</div>
+						<div style="height: 40px;"></div>
+					</div>
 				</div>
 			</div>
 			<div class="row basket-info">
 				<div class="col-xs-12">
+					<div class="clear-basket-block">
+						<div class="clear-basket"><a href="#" class="uline">Очистить корзину</a></div>
+					</div>
 					<p class="time-delivery">Доставим за 30 минут с момента заказа</p>
 					<hr>
 					<p class="free-delivery">Бесплатная доставка <br><span>при сумме заказа от 500 руб</span></p>
 					<p class="sale">Скидки за бонусы <br><span>Для постоянных клиентов</span></p>
-					
-				</div>
-			</div>
-	</div>
-	<div class="office topblock">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="logo bounceIn wow">
-						<a href="#"><img src="images/logoredcircle.png" alt=""></a>
-					</div>
-					<div class="menu">
-						<ul>
-							<li><a href="#">Блог о компании</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>     
-					</div>
-					<div class="cont">
-						<div class="phone"><a href="#" class="uline">Зачем нам звонить?</a></div>
-						<div><a href="#" class="btn profile"><img src="images/avatar.png" class="avatar img-circle">Юрий Семенов <i class="fa fa-angle-down"></i></a></div>
-					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="office topmenu">
+	</section>
+	<section class="office topblock">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="logo">
-						<a href="#"><img src="images/logoredcircle.png" alt=""></a>
+						<a href="#"><img src="img/logoredcircle.png" alt=""></a>
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a href="#">Блог о компании</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>     
+					</div>
+					<div class="cont js-callMe-wrapp">
+						<div class="phone"><a href="javascript:void(0);" title="Зачем нам звонить?" class="js-callMe-click unline">Зачем нам звонить?</a></div>
+						<div class="js-callMe-formWrapp text-left">
+							<p>У нас есть телефон для заказов <span>+7 (499) 226 94 94</span></p>
+							<h4>Но зачем нам звонить?</h4>
+						  <p class="callme-desc">Когда делая заказ через сайт вы получите его на 15 минут быстрее и на 100 рублей дешевле, нежели если вы закажите его по телефону.</p>
+							<p class="know-arranged"><a href="">Узнайте, почему так устроено</a></p>
+
+						</div>
+						<div><a href="#" class="btn profile"><img src="img/avatar.png" class="avatar img-circle">Юрий Семенов <i class="fa fa-angle-down"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="office topmenu">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="logo">
+						<a href="#"><img src="img/logoredcircle.png" alt=""></a>
 					</div>
 					<div class="menu">
 						<ul>
@@ -88,17 +200,17 @@
 					</div>
 					<div class="cont">
 						<div class="phone"><a href="#" class="uline">Зачем нам звонить?</a></div>
-						<div><a href="#" class="btn profile"><img src="images/avatar.png" class="avatar img-circle">Юрий Семенов <i class="fa fa-angle-down"></i></a></div>
+						<div><a href="#" class="btn profile"><img src="img/avatar.png" class="avatar img-circle">Юрий Семенов <i class="fa fa-angle-down"></i></a></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="office">
+	</section>
+	<section class="office">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h4 class="title-block animated">Личный кабинет</h4>
+					<h3 class="title-block">Личный кабинет</h3>
 					<div class="office-menu">
 						<ul>
 							<li class="i1"><a href="#" class="active">Любимые продукты</a></li>
@@ -112,7 +224,7 @@
 			<div class="row">
 			<div class="col-xs-12">
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products01.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products01.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -122,7 +234,7 @@
 					<div class="products-basket"><a href=""><div class="products-basket-button"></div></a></div>
 				</div>
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products02.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products02.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -132,7 +244,7 @@
 					<div class="products-basket"><a href=""><div class="products-basket-button"></div></a></div>
 				</div>
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products03.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products03.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -142,7 +254,7 @@
 					<div class="products-basket"><a href=""><div class="products-basket-button"></div></a></div>
 				</div>
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products01.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products01.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -152,7 +264,7 @@
 					<div class="products-basket"><a href=""><div class="products-basket-button"></div></a></div>
 				</div>
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products02.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products02.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -162,7 +274,7 @@
 					<div class="products-basket"><a href=""><div class="products-basket-button"></div></a></div>
 				</div>
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products03.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products03.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -172,7 +284,7 @@
 					<div class="products-basket"><a href=""><div class="products-basket-button"></div></a></div>
 				</div>
 				<div class="product-item">
-					<div class="product-image"><a href=""><img src="images/products/products04.png" class="img-responsive"></a></div>
+					<div class="product-image"><a href=""><img src="img/products/products04.png" class="img-responsive"></a></div>
 					<div class="products-title">Шашлык из свиной шейки</div>
 					<div class="products-desc">
 						<div class="heft">250 гр</div>
@@ -184,17 +296,17 @@
 			</div>
 		</div>
 		<div class="row show-more-block">
-				<div class="col-xs-12">
-					<div class="show-more"><a href="#" class="uline">Показать еще</a></div>
-				</div>
+				<a href="#"><div class="col-xs-12">
+					<div class="show-more"><span>Показать еще</span></div>
+				</div></a>
 			</div>
 		</div>
-	</div>
-	<div class="footer-info-block">
+	</section>
+	<section class="footer-info-block">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h4 class="title-block animated">Хотите больше информации?</h4>
+					<h4 class="title-block">Хотите больше информации?</h4>
 					<div class="text">
 						<p>Мы полностью открыты для вас, вы можете узнать все что захотите.</p>
 						<div class="col-xs-4">
@@ -226,8 +338,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="footer">
+	</section>
+	<section class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -235,36 +347,235 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</section>	
 </div>
 
-		<script type="text/javascript" src="js/slick.min.js"></script>
-		<script type="text/javascript" src="js/style.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				var list = document.getElementsByClassName("basket-pole");
+<div id="myModal1" class="modal fade" role="dialog">
+        <button type="button" class="close" data-dismiss="modal">Закрыть</button>
+		<div class="text">
+			<h4 class="title-block">Хотите дешевле?</h4>
+			<p class="opacity07">Это можно устроить!<br>
+			Мы всегда рады пойти на встречу лояльным почитателям нашего шашлычка и вкусностей.</p> 
+			<p class="size22">Выберите подходящий вам способ снизить цену:</p>
+			<ul class="footer-list1">
+				<li><a href="">Вы заказываете у нас впервые</a></li>
+				<li><a href="">Вы готовы рассказать о нашей компании друзьям</a></li>
+				<li><a href="">Вы хотите участвовать в конкурсе</a></li>
+				<li><a href="">У вас есть промокод</a></li>
+			</ul>
+		</div>
+</div>
+<div id="myModal2" class="modal fade" role="dialog">
+	<button type="button" class="close" data-dismiss="modal">Закрыть</button>
+	<div class="product-details">
+		<h4 class="title-block">Шашлык из свиной шейки</h4>
+		<div class="product-desc-block">
+			<div class="product-img"><img src="img/products/products-big01.png"/></div>
+			<div style="float: left; width: 262px;">
+			<div class="price-block">
+				<div class="triangel-left"></div>
+				<div class="price-block-inner">
+					<div class="product-price">194<span>Ф</span></div>
+					<a href=""><div class="products-basket-button"></div></a>
+					<div class="clearfix"></div>
+					<div class="more-cheaply2"><a data-toggle="modal" data-target="#myModal1" href="">Хочу дешевле</a></div>
+				</div>
+			</div>
+			<div class="product-desc">
+				<div class="heft">Вес: 250 гр <span>(1 порция)</span></div>
+				<div class="ingredients">состав: <span>свинина, лук, соус для мяса, перец черный, перец красный, укроп, петрушка, масло подсолнечное</span></div>
+				<div class="manufacturer">производитель мяса<br>
+					<img src="img/manufacturer.png">
+				</div>
+			</div>
+			</div>
+		</div>
+		<h4 class="title-recomend">Рекомендуем к шашлыку</h4>
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive01.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">289<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive02.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">322<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive03.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">194<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="myModal3" class="modal fade" role="dialog">
+	<button type="button" class="close" data-dismiss="modal">Закрыть</button>
+	<div class="product-details">
+		<h4 class="title-block pull-left">Выберите соус</h4>
+		<div class="row">
+		<a href="#" class="btn no-thank pull-right">Нет, спасибо</a>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive01.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">289<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive02.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">322<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive03.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">194<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive02.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">322<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive03.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">194<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h4 class="title-recomend">Также рекомендуем к шашлыку</h4>
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive01.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">289<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive02.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">322<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="product-item">
+					<a id="trigger-overlay2"><img src="img/products/additive03.png" class="img-responsive"></a>
+					<div class="products-title-price">
+						<div class="products-title">Шашлык из свиной шейки</div>
+						<div class="products-price">194<span>Ф</span></div>
+						<a href=""><div class="products-basket-button"></div></a>
+					</div>
+					<hr>
+					<div class="products-desc">
+						<div class="heft">250 гр</div>
+						<div class="ingredients">состав: <span>свинина, лук, соус для м...</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-				list[0].style.height = document.body.clientHeight-262 + "px";
-				list[0].style.lineHeight = document.body.clientHeight-262 + "px";
-			});
-			function screenClass() {
-			if ($(window).innerWidth() > 992) {
-				$(window).scroll(function(){
-					if ($(this).scrollTop() > 304) {
-						$('.topmenu').addClass('fixed');
-						$('.topblock').addClass('fixed');
-						$('.office.topblock').removeClass('fixed');
-					} else {
-						$('.topmenu').removeClass('fixed');
-						$('.topblock').removeClass('fixed');
-					};
-				});
-			} else { }
-		};
-		screenClass();
-		$(window).bind('resize',function(){
-			screenClass();
-		});
-	</script>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+
 </body>
 </html>
